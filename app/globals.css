@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card text-card-foreground rounded-xl border border-border shadow-md p-5 transition-transform hover:scale-105 hover:shadow-lg;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium text-white bg-accent hover:bg-accent-hover transition-colors;
+  }
+
+  .status-success {
+    @apply text-success font-semibold;
+  }
+  .status-warning {
+    @apply text-warning font-semibold;
+  }
+  .status-danger {
+    @apply text-danger font-semibold;
+  }
+}
